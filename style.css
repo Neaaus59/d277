@@ -1,0 +1,103 @@
+p {
+    font-family: "Arial", sans-serif;
+    padding-left: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-style: oblique;
+    table-layout: fixed;
+    font-size: 17px;
+}
+td {
+    text-align: center;
+    width: 33%;
+}
+#floataside {
+    float: right;
+    width: 30%;
+    margin-right: 2%;
+    margin-top: 20px;
+}
+#infosection {
+    float: left;
+    width: 60%;
+    margin-left: 2%; 
+    margin-top: 20px;
+}
+#footer{
+    clear:both;
+    height: auto;
+    width: auto;
+}
+.conatiner::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+<!-- Code Studio assisted with container::after. This prevented the footer from being overlapped by the floated elements. -->
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    width: 600px;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h2, h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+section {
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+footer {
+    border: 2px solid black;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+aside {
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+nav a:hover {
+    color: blue;
+    background-color: gold;
+    border-radius: 5px;
+}
+#obkysection {
+    position: relative;
+    width: 35%;
+    height: 500px;
+    background: blue;
+    margin-top: 20px;
+    border: black solid 5px;
+    float: left;
+}
+<!-- This section continuously relocated the aside to the bottom right of the page. 
+I needed to inspect the webpage to see that this id selector invisible box spanned the whole width of the page 
+-->
+#obkysection img {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    bottom: 10%;
+}
+element h1 {
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.highlight {
+    border: 5px solid black; 
+    color:crimson;   
+}    
